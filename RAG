@@ -42,6 +42,7 @@ public:
         return false;
     }
 
+//function to ptintGraph
     void printGraph() {
         cout << "\n RESOURCE ALLOCATION GRAPH";
         for (auto& p : adj) {
@@ -51,6 +52,7 @@ public:
     }
 };
 
+// Safe scenario without deadlock
 void runWithoutDeadlock() {
     RAG g;
     g.addNode("P1"); g.addNode("P2"); g.addNode("P3"); g.addNode("P4");
